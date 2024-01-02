@@ -1,13 +1,12 @@
 #! /bin/sh
-~/.xkbmap &
+setxkbmap -layout es  # add 'us,ar'
 polybar &
-feh --bg-scale Desktop/wallpaper/forest.png &
+feh --bg-scale ~/Desktop/wallpaper/forest.jpg &
 picom -b -f &
 fcitx -d & 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV 
-
+bspc monitor -d 一 二 三 四 
 bspc config border_width         1
 bspc config window_gap          12
 

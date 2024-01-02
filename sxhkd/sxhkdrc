@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	~/.config/polybar/forest/scripts/launcher.sh
+	/home/zelidev/.config/rofi/launchers/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -129,3 +129,6 @@ super + v
 
 super + shift + {1-4}
     bspc window -d '^{1-4}'
+
+super + n
+	bspc node -t tiled
